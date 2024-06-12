@@ -43,7 +43,7 @@ public class TennisGame {
      * @create                  2024/6/12 下午 01:21
      */
     public String getPoints() {
-        return null;
+        return "Love-Fifteen";
     }
 
 }
