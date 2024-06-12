@@ -36,7 +36,7 @@ public class TennisGameTest {
         String expected = "Love-Fifteen";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -52,7 +52,7 @@ public class TennisGameTest {
         String expected = "Fifteen-Love";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -68,7 +68,7 @@ public class TennisGameTest {
         String expected = "Fifteen-All";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -83,7 +83,7 @@ public class TennisGameTest {
         String expected = "P1 Win";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -98,7 +98,7 @@ public class TennisGameTest {
         String expected = "P2 Win";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -113,7 +113,7 @@ public class TennisGameTest {
         String expected = "Deuce";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -128,7 +128,7 @@ public class TennisGameTest {
         String expected = "P1 Advantage";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -143,7 +143,7 @@ public class TennisGameTest {
         String expected = "P1 Win";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);
@@ -158,7 +158,7 @@ public class TennisGameTest {
         String expected = "P2 Win";
 
         // Act
-        String actual = game.getPoints();
+        String actual = game.getTennisGame();
 
         // Assert
         assertThat(actual).isEqualTo(expected);

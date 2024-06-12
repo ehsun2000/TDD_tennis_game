@@ -46,34 +46,79 @@ public class TennisGame {
      * @author                  7036 Charles.Zheng
      * @create                  2024/6/12 下午 01:21
      */
-    public String getPoints() {
-
-        if (player1 > 2 && player2 > 2) {
-            if (player1 - player2 > 1) {
-                return "P1 Win";
-            }
-            if (player2 - player1 > 1) {
-                return "P2 Win";
-            }
-            if (player1 == player2) {
-                return "Deuce";
-            }
-            if (player1 > player2) {
-                return "P1 Advantage";
-            }
-            if (player1 < player2) {
-                return "P2 Advantage";
-            }
+    public String getTennisGame() {
+        if (this.isWinCondition()) {
+            return this.playerWithHigherScore() + " Win";
         }
 
-        if (player1 > 3) {
-            return "P1 Win";
+        if (this.isDeuce()) {
+            return "Deuce";
         }
 
-        if (player2 > 3) {
-            return "P2 Win";
+        if (this.isAdvantage()) {
+            return this.playerWithHigherScore() + " Advantage";
         }
 
+        return currentScore();
+    }
+
+    /**
+     * 是否達到勝利條件
+     * @return
+     * ------------------------------------------
+     * @version                 1.0
+     * @author                  7036 Charles.Zheng
+     * @create                  2024/6/12 下午 03:17
+     */
+    private boolean isWinCondition() {
+        return Math.abs(player1 - player2) > 1 && (player1 > 3 || player2 > 3);
+    }
+
+    /**
+     * 是否為平局
+     * @return
+     * ------------------------------------------
+     * @version                 1.0
+     * @author                  7036 Charles.Zheng
+     * @create                  2024/6/12 下午 03:17
+     */
+    private boolean isDeuce() {
+        return player1 == player2 && player1 >= 3;
+    }
+
+    /**
+     * 是否為優勢局
+     * @return
+     * ------------------------------------------
+     * @version                 1.0
+     * @author                  7036 Charles.Zheng
+     * @create                  2024/6/12 下午 03:18
+     */
+    private boolean isAdvantage() {
+        return Math.abs(player1 - player2) == 1 && (player1 > 3 || player2 > 3);
+    }
+
+    /**
+     * 獲取分數較高的玩家
+     * @return
+     * ------------------------------------------
+     * @version                 1.0
+     * @author                  7036 Charles.Zheng
+     * @create                  2024/6/12 下午 03:18
+     */
+    private String playerWithHigherScore() {
+        return player1 > player2 ? "P1" : "P2";
+    }
+
+    /**
+     * 獲取當前比分
+     * @return
+     * ------------------------------------------
+     * @version                 1.0
+     * @author                  7036 Charles.Zheng
+     * @create                  2024/6/12 下午 03:18
+     */
+    private String currentScore() {
         if (player1 == player2) {
             return POINT_NAME_ARRAY[player1] + BAR + "All";
         }
