@@ -52,6 +52,9 @@ public class TennisGame {
             if (player1 == player2) {
                 return "Deuce";
             }
+            if (player1 > player2) {
+                return "P1 Advantage";
+            }
         }
 
         if (player1 > 3) {

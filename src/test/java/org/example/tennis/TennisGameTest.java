@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * - [*] 0:4  P2 Win
  * <p>
  * - [*] 4:4  Deuce
- * - [] 5:4  P1 Advantage
+ * - [*] 5:4  P1 Advantage
  * - [] 4:5  P2 Advantage
  * <p>
  * - [] 5:3  P1 Win
