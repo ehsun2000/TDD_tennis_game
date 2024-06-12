@@ -135,12 +135,12 @@ public class TennisGameTest {
     }
 
     @Test
-    public void p1_advantage_4_vs_5() {
+    public void p1_win_5_vs_3() {
         // Arrange
         TennisGame game = new TennisGame();
-        game.setPlayer1(4);
-        game.setPlayer2(5);
-        String expected = "P2 Advantage";
+        game.setPlayer1(5);
+        game.setPlayer2(3);
+        String expected = "P1 Win";
 
         // Act
         String actual = game.getPoints();
