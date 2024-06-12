@@ -58,4 +58,20 @@ public class TennisGameTest {
         assertThat(actual).isEqualTo(expected);
     }
 
+
+    @Test
+    public void test_show_point_1_vs_1() {
+        // Arrange
+        TennisGame game = new TennisGame();
+        game.setPlayer1(1);
+        game.setPlayer2(1);
+        String expected = "Fifteen-All";
+
+        // Act
+        String actual = game.getPoints();
+
+        // Assert
+        assertThat(actual).isEqualTo(expected);
+    }
+
 }
