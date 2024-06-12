@@ -49,6 +49,9 @@ public class TennisGame {
     public String getPoints() {
 
         if (player1 > 2 && player2 > 2) {
+            if (player1 - player2 > 1) {
+                return "P1 Win";
+            }
             if (player1 == player2) {
                 return "Deuce";
             }
