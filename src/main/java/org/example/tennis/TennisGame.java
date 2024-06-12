@@ -52,6 +52,9 @@ public class TennisGame {
             if (player1 - player2 > 1) {
                 return "P1 Win";
             }
+            if (player2 - player1 > 1) {
+                return "P2 Win";
+            }
             if (player1 == player2) {
                 return "Deuce";
             }

@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * - [*] 4:5  P2 Advantage
  * <p>
  * - [*] 5:3  P1 Win
- * - [] 3:5  P2 Win
+ * - [*] 3:5  P2 Win
  * ------------------------------------------
  *
  * @author 7036 Charles.Zheng
