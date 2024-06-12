@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * - [*] P1 得分 P2 得分  Fifteen-All
  * <p>
  * - [*] 4:0  P1 Win
- * - [] 0:4  P2 Win
+ * - [*] 0:4  P2 Win
  * <p>
  * - [] 4:4  Deuce
  * - [] 5:4  P1 Advantage

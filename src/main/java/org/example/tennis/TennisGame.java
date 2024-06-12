@@ -51,6 +51,11 @@ public class TennisGame {
         if (player1 > 3) {
             return "P1 Win";
         }
+
+        if (player2 > 3) {
+            return "P2 Win";
+        }
+
         if (player1 == player2) {
             return POINT_NAME_ARRAY[player1] + BAR + "All";
         }
