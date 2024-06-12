@@ -48,6 +48,9 @@ public class TennisGame {
      */
     public String getPoints() {
 
+        if (player1 > 3) {
+            return "P1 Win";
+        }
         if (player1 == player2) {
             return POINT_NAME_ARRAY[player1] + BAR + "All";
         }

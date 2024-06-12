@@ -7,11 +7,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * [ ] TennisGame
- * - [] P2 得分  Love-Fifteen
- * - [] P1 得分  Fifteen-Love
- * - [] P1 得分 P2 得分  Fifteen-All
+ * - [*] P2 得分  Love-Fifteen
+ * - [*] P1 得分  Fifteen-Love
+ * - [*] P1 得分 P2 得分  Fifteen-All
  * <p>
- * - [] 4:0  P1 Win
+ * - [*] 4:0  P1 Win
  * - [] 0:4  P2 Win
  * <p>
  * - [] 4:4  Deuce
