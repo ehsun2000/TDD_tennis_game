@@ -18,6 +18,10 @@ public class TennisGame {
      */
     private int player2 = 0;
 
+    private final String BAR = "-";
+
+    private final String[] POINT_NAME_ARRAY = {"Love", "Fifteen", "Thirty", "Forty"};
+
     public int getPlayer1() {
         return player1;
     }
@@ -43,7 +47,7 @@ public class TennisGame {
      * @create                  2024/6/12 下午 01:21
      */
     public String getPoints() {
-        return "Love-Fifteen";
+        return POINT_NAME_ARRAY[player1] + BAR + POINT_NAME_ARRAY[player2];
     }
 
 }
