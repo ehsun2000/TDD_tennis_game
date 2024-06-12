@@ -47,6 +47,11 @@ public class TennisGame {
      * @create                  2024/6/12 下午 01:21
      */
     public String getPoints() {
+
+        if (player1 == player2) {
+            return POINT_NAME_ARRAY[player1] + BAR + "All";
+        }
+
         return POINT_NAME_ARRAY[player1] + BAR + POINT_NAME_ARRAY[player2];
     }
 
