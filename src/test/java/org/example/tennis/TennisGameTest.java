@@ -119,4 +119,19 @@ public class TennisGameTest {
         assertThat(actual).isEqualTo(expected);
     }
 
+    @Test
+    public void p1_advantage_5_vs_4() {
+        // Arrange
+        TennisGame game = new TennisGame();
+        game.setPlayer1(5);
+        game.setPlayer2(4);
+        String expected = "P1 Advantage";
+
+        // Act
+        String actual = game.getPoints();
+
+        // Assert
+        assertThat(actual).isEqualTo(expected);
+    }
+
 }
