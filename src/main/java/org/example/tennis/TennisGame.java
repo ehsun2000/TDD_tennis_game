@@ -34,4 +34,16 @@ public class TennisGame {
         this.player2 = player2;
     }
 
+    /**
+     * 獲取當前比分
+     * @return
+     * ------------------------------------------
+     * @version                 1.0
+     * @author                  7036 Charles.Zheng
+     * @create                  2024/6/12 下午 01:21
+     */
+    public String getPoints() {
+        return null;
+    }
+
 }
