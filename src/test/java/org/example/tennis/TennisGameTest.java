@@ -8,6 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * [ ] TennisGame
  * - [] P2 得分  Love-Fifteen
+ * - [] P1 得分  Fifteen-Love
  * - [] P1 得分 P2 得分  Fifteen-All
  * <p>
  * - [] 4:0  P1 Win
@@ -33,6 +34,22 @@ public class TennisGameTest {
         TennisGame game = new TennisGame();
         game.setPlayer2(1);
         String expected = "Love-Fifteen";
+
+        // Act
+        String actual = game.getPoints();
+
+        // Assert
+        assertThat(actual).isEqualTo(expected);
+    }
+
+
+    @Test
+    public void test_show_point_1_vs_0() {
+        // Arrange
+        TennisGame game = new TennisGame();
+        game.setPlayer1(1);
+        game.setPlayer2(0);
+        String expected = "Fifteen-Love";
 
         // Act
         String actual = game.getPoints();
